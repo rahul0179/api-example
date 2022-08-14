@@ -23,6 +23,7 @@ const displayCountryDetails = c => {
          <h5>${c.name}</h5>
          <p>${c.population}</p>
          <img width='120x' src="${c.flag}">
+          
        
          `
 
