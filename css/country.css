@@ -1,0 +1,20 @@
+.country{
+    border: 2px solid red;
+    margin: 10px;
+    padding:20px;
+    border-radius:5px;
+    text-align:center;
+    background-color:green;
+    color:white;
+
+}
+#countries{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    background-color:indigo
+}
+
+#details-show{
+    
+
+}
