@@ -2,8 +2,11 @@ const searchFood = () => {
     const searchInput = document.getElementById("search-input");
     const searchtext = searchInput.value;
     console.log(searchtext)
-
+    // remove input 
     searchInput.value = '';
+
+
+    // lode data 
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchtext}`
     fetch(url)
         .then(res => res.json())
@@ -20,6 +23,7 @@ const m = () => {
         .then(data => meal(data))
 
 }
+m();
 
 
 
@@ -47,7 +51,7 @@ const meal = data => {
 
 }
 
-m();
+
 
 
 
@@ -57,7 +61,7 @@ m();
 
 const displayMeals = data => {
     const searchResult = document.getElementById("search-Result")
-
+    searchResult.innerHTML = ' ';
     const meals = data.meals;
     console.log(meals)
 
